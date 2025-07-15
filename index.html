@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protected Access to June Health</title>
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      if (input === "junemoon") {
+        // Redirect to your Google Site if correct
+        window.location.href = "https://sites.google.com/view/your-site-url";
+      } else {
+        alert("Wrong password.");
+      }
+    }
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="content">
+        <div class="stuff">
+            <h2>Enter Password to access June's Help Centre</h2>
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="checkPassword()">Enter</button> 
+        </div>
+    </div>
+</body>
+
+<style>
+    .antic-didone-regular {
+        font-family: "Antic Didone", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    
+    .dm-sans{
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body{
+        background-image: url(./june-bg.png);
+        background-position: center;
+        color: #f7f3f0;
+        font-family: "Antic Didone";
+    }
+
+    h2{
+        font-size: 4vh;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    .stuff{
+        padding: 10vh;
+    }
+
+    #password, button{
+        padding: 1vh;
+        font-family: "DM Sans";
+        font-size: 2vh;
+        border-radius: 1vh;
+        border-width: 1px;
+    }
+
+    button:hover{
+        color: #f7f3f0;
+        background-color: #252553;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #f7f3f0;
+        cursor: pointer;
+    }
+
+</style>
+</html>
